@@ -91,6 +91,6 @@ export class AuthService {
       displayName: user.displayName,
     };
 
-    return userRef.set(data, { merge: true });
+    return userRef.set(data, { merge: true }); //en caso de que exista hacer un merge
   }
 }
